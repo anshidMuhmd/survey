@@ -3,91 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Forms</title>
-    <style>
-        body{
-            background-image:"asset/fish-ocean-sea-sealife-wallpaper-preview.jpg";
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <h1 align="center">SURVEY FORM</h1>
-    </div>
- <form action="">
-
-    <div class="main" align="center">
-        <div>
-            <h3>Let us know how we can improve</h3>
+        <div align="center">
+            <h2>SURVEY FORM</h2>
+            <p >Let us know how we can improve</p>
+            <form>
+                <table cellpadding="10">
+                    <tr>
+                        <td align="right"><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Enter Your Name" required></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Enter Your Email" required></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label for="age">Age:</label></td>
+                        <td><input type="text" id="age" name="age" placeholder="Age" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="file" id="file" name="file"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="role">Which option best describes your current role:</label></td>
+                        <td>
+                            <select id="role" name="role">
+                                <option value="student">Student</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Recommend to a friend?</label></td>
+                        <td>
+                            <input type="radio" name="recommend" value="definitely"> Definitely<br>
+                            <input type="radio" name="recommend" value="maybe"> Maybe<br>
+                            <input type="radio" name="recommend" value="not_sure"> Not sure
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="like">What do you like most here:</label></td>
+                        <td>
+                            <select id="like" name="like">
+                                <option value="">Select an option</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Things that should be improved in the future (check all that apply)</td>
+                        <td>
+                            <input type="checkbox" name="improvement" value="front_end"> Front-end Projects<br>
+                            <input type="checkbox" name="improvement" value="back_end"> Back-end Projects<br>
+                            <input type="checkbox" name="improvement" value="data_viz"> Data Visualization
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="comments">Any Comments or Suggestions?</label></td>
+                        <td><textarea id="comments" name="comments">Comments</textarea></td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
-
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="" placeholder="Enter Your Name" required>
-        </div>
-        <br>
-        <div>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="" placeholder="Enter Your Email" required>
-        </div>
-        <br>
-        <div>
-            <label for="age">Age:</label>
-            <input type="text" name="age" id="" placeholder="Age" required>
-        </div>
-        <br>
-        <div>
-            <input type="file" name="file" id="">
-        </div>
-        <br>
-
-        <div>
-           <label for="">Which option best describe your current role?</label> 
-           <select>
-            <option value="student">student</option>
-            <option value="employee">employee</option>
-            <option value="manager">Manager</option>
-           </select>
-        </div>
-        <br>
-
-        <div>
-            <label for="">How likely is that you would recomand this program to a friend</label>
-            <label><input type="radio" name="de" id="">Definitely </label>
-            <label><input type="radio" name="de">Maybe</label>
-            <label><input type="radio" name="de" id="">Not sure</label>
-        </div>
-        <br>
-
-        <div>
-            <label for="">What do you like Most here</label>
-            <select name="" id="">
-                <option value="select">Select an option</option>
-            </select>
-        </div>
-        <br>
-
-        <div>
-            <label for="">Things that should be improved in the future (check all that apply)</label>
-            <input type="checkbox" name="fr" id="">Front-end project
-            <input type="checkbox" name="bk">Back-end project
-            <input type="checkbox" name="dv" id="">Data Visualization
-        </div>
-        <br>
-
-        <div>
-            <label >Any comments or suggestions</label>
-            <textarea name="comments" id="">Enter your comment here</textarea>
-    
-        </div>
-        <br>
-        <div>
-            <input type="submit" name="submit" id="">
-        </div>
-    
-    </div>
-  </form>
-
-    
 </body>
 </html>
